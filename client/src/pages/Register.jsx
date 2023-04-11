@@ -9,7 +9,7 @@ const Container = styled.div`
         rgba(255, 255, 255, 0.5),
         rgba(255, 255, 255, 0.5)
     ),
-    url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    url("https://th.bing.com/th/id/R.0d462ece64cfb779b35cdc12bdc682a7?rik=hFb5ttPmSJGhbg&riu=http%3a%2f%2fwhimsicalhomeandgarden.com%2fwp-content%2fuploads%2f2016%2f11%2f33_Photo_20Cred_20Sierra_20Sothebys_20International_20Realty09.0_WHG.jpg&ehk=edxCVFxuJeH9rB7W56It35k%2f0VuPYMbc1BtIzk3Dnqo%3d&risl=&pid=ImgRaw&r=0")
         center;
     background-size: cover;
     display: flex;
@@ -55,6 +55,7 @@ const Button = styled.button`
     padding: 10px 30px;
     font-size: 15px;
     cursor: pointer;
+    
 `
 
 function Register() {
