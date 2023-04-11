@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {ShoppingCartOutlined, SearchOutlined,FavoriteBorderOutlined  } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
     position: relative;
@@ -64,7 +65,9 @@ function Product({item}) {
                 <ShoppingCartOutlined />
             </Icon>
             <Icon>
-                <SearchOutlined  />
+                <Link to={`/product/${item._id}`}>
+                    <SearchOutlined  />
+                </Link>
             </Icon>
             <Icon>
                 <FavoriteBorderOutlined  />
