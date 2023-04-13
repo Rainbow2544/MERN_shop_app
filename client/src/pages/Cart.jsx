@@ -189,8 +189,9 @@ function Cart() {
     },[stripeToken, cart,navigate]);
   return (
     <Container>
-      <Navbar />
       <Announcement />
+      <Navbar />
+      
       <Wrapper>
         <Title>YOUR BAG</Title>
         <Top>
