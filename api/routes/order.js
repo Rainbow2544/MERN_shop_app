@@ -49,14 +49,14 @@ router.get("/find/:userId", verifyTokenAndAuthorization, async (req,res)=>{
     }
 })
 //get all orders
-router.get("/", verifyTokenAndAdmin, async (req,res)=>{
-    try{
-        const orders = Order.find();
-        res.status(200).json(orders);
-    }catch(err){
-        res.status(500).json(err);
-    }
-})
+router.get("/", verifyTokenAndAdmin, async (req, res) => {
+  try {
+    const orders = await Order.find();
+    res.status(200).json(orders);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 //get monthly income
 router.get("/income",verifyTokenAndAdmin, async (req,res) =>{
