@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import Announcement from '../components/Announcement';
+import Navbar from '../components/Navbar';
 
 const Container = styled.div`
     width: 100vw;
@@ -60,7 +62,11 @@ const Button = styled.button`
 
 function Register() {
   return (
-    <Container >
+    <>
+    <Announcement />
+        <Navbar />
+        <Container >
+        
         <Wrapper>
             <Title>CREATE AN ACCOUNT</Title>
             <Form>
@@ -78,6 +84,8 @@ function Register() {
             </Form>
         </Wrapper>
     </Container>
+    </>
+    
   )
 }
 

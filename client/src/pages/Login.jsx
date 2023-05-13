@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import {mobile} from "../responsive";
 import { useDispatch, useSelector } from "react-redux";
 import {login} from "../redux/apiCalls"
+import Navbar from '../components/Navbar';
+import Announcement from '../components/Announcement';
 
 const Container = styled.div`
     width: 100xw;
@@ -78,7 +80,11 @@ function Login() {
     login(dispatch, { username, password });
   };
   return (
-    <Container>
+    <>
+    <Announcement />
+        <Navbar />
+        <Container>
+      
       <Wrapper>
         <Title>SIGN IN</Title>
         <Form>
@@ -100,6 +106,8 @@ function Login() {
         </Form>
       </Wrapper>
     </Container>
+    </>
+    
   )
 }
 
